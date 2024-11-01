@@ -7,6 +7,18 @@ public class Person {
     private string Address;
     private  string DateOFBirth;
 
+    public Person(string id, string lastName, string firstName, string address, string dateOFBirth) {
+        this.id = id;
+        LastName = lastName;
+        FirstName = firstName;
+        Address = address;
+        DateOFBirth = dateOFBirth;
+    }
+
+    public Person() {
+
+    }
+
     public string getLastName() {
         return LastName;
     }
@@ -45,5 +57,16 @@ public class Person {
 
     public void setDateOFBirth(string dateOFBirth) {
         DateOFBirth = dateOFBirth;
+    }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "id=" + id +
+                ", LastName=" + LastName +
+                ", FirstName=" + FirstName +
+                ", Address=" + Address +
+                ", DateOFBirth=" + DateOFBirth +
+                '}';
     }
 }

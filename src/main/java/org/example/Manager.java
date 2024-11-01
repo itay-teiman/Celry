@@ -1,8 +1,14 @@
 package org.example;
 
-public class Manager {
+public class Manager extends Employee {
 
     private  double  MonthlySalary;
+
+
+    public Manager(string id, string lastName, string firstName, string address, string dateOFBirth, string emplId, string department, string dateOfStart, double monthlySalary) {
+        super(id, lastName, firstName, address, dateOFBirth, emplId, department, dateOfStart);
+        MonthlySalary = monthlySalary;
+    }
 
     public double getMonthlySalary() {
         return MonthlySalary;
@@ -12,7 +18,15 @@ public class Manager {
         MonthlySalary = monthlySalary;
     }
 
-    public double  salary(){
-        return  getMonthlySalary();
+    @Override
+    public <T> Object salary() {
+        return MonthlySalary;
+    }
+
+    @Override
+    public String toString() {
+        return "Manager{" +
+                "MonthlySalary=" + MonthlySalary +
+                '}';
     }
 }
