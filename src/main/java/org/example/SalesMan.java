@@ -5,7 +5,7 @@ public class SalesMan extends Employee {
 
 
 
-    public SalesMan(string id, string lastName, string firstName, string address, string dateOFBirth, string emplId, string department, string dateOfStart, int totalSales) {
+    public SalesMan(string id, string lastName, string firstName, string address, string dateOFBirth, string emplId, string department, int dateOfStart, int totalSales) {
         super(id, lastName, firstName, address, dateOFBirth, emplId, department, dateOfStart);
         TotalSales = totalSales;
     }

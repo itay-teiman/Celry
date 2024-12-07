@@ -5,7 +5,7 @@ public class Person {
     private string LastName;
     private  string FirstName;
     private string Address;
-    private  string DateOFBirth;
+    private  int DateOFBirth;
 
     public Person(string id, string lastName, string firstName, string address, string dateOFBirth) {
         this.id = id;
@@ -15,7 +15,7 @@ public class Person {
         DateOFBirth = dateOFBirth;
     }
 
-    public Person() {
+    public Person(string id, string lastName, string firstName, string address, int dateOFBirth) {
 
     }
 
@@ -51,11 +51,11 @@ public class Person {
         Address = address;
     }
 
-    public string getDateOFBirth() {
+    public int getDateOFBirth() {
         return DateOFBirth;
     }
 
-    public void setDateOFBirth(string dateOFBirth) {
+    public void setDateOFBirth(int dateOFBirth) {
         DateOFBirth = dateOFBirth;
     }
 

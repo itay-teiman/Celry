@@ -3,11 +3,11 @@ package org.example;
 public class Employee extends Person{
     private  string emplId;
     private   string department;
-    private  string DateOfStart;
+    private  int DateOfStart;
 
 
 
-    public Employee(string id, string lastName, string firstName, string address, string dateOFBirth, string emplId, string department, string dateOfStart) {
+    public Employee(string id, string lastName, string firstName, string address, int dateOFBirth, string emplId, string department, int dateOfStart) {
         super(id, lastName, firstName, address, dateOFBirth);
         this.emplId = emplId;
         this.department = department;
@@ -30,11 +30,11 @@ public class Employee extends Person{
         this.department = department;
     }
 
-    public string getDateOfStart() {
+    public int getDateOfStart() {
         return DateOfStart;
     }
 
-    public void setDateOfStart(string dateOfStart) {
+    public void setDateOfStart(int dateOfStart) {
         DateOfStart = dateOfStart;
     }
     public <T> Object salary(){

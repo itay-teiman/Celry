@@ -6,7 +6,7 @@ public class SeniorMamager extends Manager {
     private  Manager M1;
 
 
-    public SeniorMamager(string id, string lastName, string firstName, string address, string dateOFBirth, string emplId, string department, string dateOfStart, double monthlySalary, double bonus, Manager m1) {
+    public SeniorMamager(string id, string lastName, string firstName, string address, string dateOFBirth, string emplId, string department, int dateOfStart, double monthlySalary, double bonus, Manager m1) {
         super(id, lastName, firstName, address, dateOFBirth, emplId, department, dateOfStart, monthlySalary);
         Bonus = bonus;
         M1 = m1;
